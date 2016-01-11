@@ -1,0 +1,28 @@
+<h2>Show comment</h2>
+
+<ul>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @comment.title %>
+  </li>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @comment.name %>
+  </li>
+
+  <li>
+    <strong>Content:</strong>
+    <%= @comment.content %>
+  </li>
+
+  <li>
+    <strong>Email:</strong>
+    <%= @comment.email %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: comment_path(@conn, :edit, @comment) %>
+<%= link "Back", to: comment_path(@conn, :index) %>
